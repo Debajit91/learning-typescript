@@ -15,8 +15,11 @@ isAdmin = true;
 
 /** When the value not declared its type will be implicitly type 'any' until explicitly type declaration. Typescript will infer it. */
 let x = undefined;
+x = 5;
+x = "five";
 
 let y: undefined = undefined;
+// y = 5; it giving error as type declared undefined
 
 
 
