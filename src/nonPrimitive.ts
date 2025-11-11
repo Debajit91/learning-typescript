@@ -1,5 +1,7 @@
 // array, object
 
+// ts - tuple
+
 let bazarList = ["rice", "sugar", "dal"];
 bazarList.push("soap");
 console.log(bazarList);
@@ -15,3 +17,13 @@ mixedArray.push(12);
 console.log(mixedArray);
 // but can not boolean
 // mixedArray.push(true);
+
+// Tuple type is a special type of Array type
+// It can be defined like these: [number, number] or [string, string] or [string, number] or [number, number, string] etc.
+// One thing should be remember that the number of element of the array will be as the number of type
+let coordinates: [number, number] = [20, 30];
+
+let couple: [string, string] = ["Husband", "wife"];
+
+let destination: [string, string, number] = ["Dhaka", "Chattogram", 3];
+// here at the time of type defining the quantity of type is 3 so the number of element in the array will be 3, we can not keep more than 3 element
