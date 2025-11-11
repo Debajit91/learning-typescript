@@ -6,3 +6,18 @@
 let userName: string = "Debajit544";
 
 userName = "Debajit";
+
+let userId: number = 123;
+
+let isAdmin: boolean = false;
+isAdmin = true;
+
+
+/** When the value not declared its type will be implicitly type 'any' until explicitly type declaration. Typescript will infer it. */
+let x = undefined;
+
+let y: undefined = undefined;
+
+
+
+
