@@ -35,7 +35,7 @@ let destination: [string, string, number] = ["Dhaka", "Chattogram", 3];
 
 // Literal Type: When property value is defined as type then it is called the Literal Type. Use Case: If we want that property value should never be changed then we can define the value as type. Here the type of department can be defined as Programmer if we want to set rule that the value of department can not be changed.
 
-// we can also use readonly at type defining time if we don't want to let change the property value in future.
+// Access Modifier: we can also use readonly at type defining time if we don't want to let change the property value in future.
 const user:{
     // department: string;
     department: "Programmer" //value => type : literal types
