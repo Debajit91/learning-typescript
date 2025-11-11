@@ -27,3 +27,36 @@ let couple: [string, string] = ["Husband", "wife"];
 
 let destination: [string, string, number] = ["Dhaka", "Chattogram", 3];
 // here at the time of type defining the quantity of type is 3 so the number of element in the array will be 3, we can not keep more than 3 element
+
+
+// reference type: object
+
+// Optional type: If property type is defined then property should not be missing. To get rid of this we can use optional symbol: '?' it is called optional type.
+
+// Literal Type: When property value is defined as type then it is called the Literal Type. Use Case: If we want that property value should never be changed then we can define the value as type. Here the type of department can be defined as Programmer if we want to set rule that the value of department can not be changed.
+
+// we can also use readonly at type defining time if we don't want to let change the property value in future.
+const user:{
+    // department: string;
+    department: "Programmer" //value => type : literal types
+    firstName: string;
+    middleName?: string;  //Optional type
+    readonly lastName: string; //now the value of lastName can not be changed in future.
+    isActive: boolean;
+} = {
+    department: "Programmer",
+    firstName: 'Devjit',
+    lastName: 'Roy',
+    isActive: true,
+}
+
+// we can get access easily the property of the object by .notation. TypeScript will give suggestion when writing dot after the object name
+user.firstName = 'Debajit';
+
+
+// department type is defined as literal types so the value can not be changed now.
+user.department = "Developer";
+console.log(user);
+
+// Cannot assign to 'lastName' because it is a read-only property.
+user.lastName = "Chy";
