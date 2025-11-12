@@ -2,6 +2,8 @@
 // string, number, boolean, undefined, null
 
 // TS: never, unknown, void, any
+// never = when a function never finishes normally always throws or loops forever
+// void = when a function return undefined or return nothing or does not return a real value 
 
 let userName: string = "Debajit544";
 
