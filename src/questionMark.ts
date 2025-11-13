@@ -26,3 +26,24 @@ const  user = null;
 const selectUser = user ?? "No User";
 
 console.log(selectUser);
+
+
+
+// optional chaining
+
+const user1:{
+    address:{
+    district: string;
+    city: string;
+    postalCode?: string; //optional type
+    };
+} = {
+    address:{
+    district: "Dhaka",
+    city: "Banani",
+    }
+}
+
+const postalCode = user1?.address?.postalCode; //optional chaining
+
+console.log(postalCode);
