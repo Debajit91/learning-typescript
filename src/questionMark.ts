@@ -1,5 +1,5 @@
 //  ? : ternary operator : decision making
-// ?? : nullish coalescing operator
+// ?? : nullish coalescing operator : null / undefined
 // ?. : optional chaining
 
 
@@ -17,3 +17,12 @@ const isEligible = (age:number) =>{
 }
 
 console.log(isEligible(20));
+
+
+// nullish coalescing
+
+const  user = null;
+
+const selectUser = user ?? "No User";
+
+console.log(selectUser);
